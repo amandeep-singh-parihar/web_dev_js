@@ -29,10 +29,19 @@
 let inp = document.querySelector("input");
 
 inp.addEventListener("keydown", function (event) {
-    console.log("key = ",event.key);
-    console.log("code = ",event.code);
-    console.log("key was relesed");
-  });
+  console.log("code = ", event.code);
+  if (event.code == "ArrowUp") {
+    console.log("character moves forward");
+  } else if (event.code == "ArrowDown") {
+    console.log("character moves downward");
+  } else if ((event.code = "ArrowLeft")) {
+    console.log("character moves left");
+  } else if (event.code == "ArrowRight") {
+    console.log("character moves right");
+  } else {
+    console.log("this is not a arrow");
+  }
+});
 
 // inp.addEventListener("keyup", function () {
 //   console.log("key was relesed");
