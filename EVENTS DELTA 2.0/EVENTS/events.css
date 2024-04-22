@@ -1,0 +1,8 @@
+.box{
+    color: black;
+    background-color: pink;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 2px solid red;
+}

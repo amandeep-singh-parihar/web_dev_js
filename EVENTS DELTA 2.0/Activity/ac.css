@@ -1,0 +1,19 @@
+h3{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+button{
+    display: block;
+    margin: auto;
+}
+
+.box{
+    height: 200px;
+    width: 600px;
+    border: 1px solid black;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
