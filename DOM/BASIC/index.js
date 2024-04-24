@@ -41,11 +41,11 @@
 
 //obj.classList
 
-//classList.add() to add nwe classes
+//classList.add() to add new classes
 
 //classList.remove() to remove classes
 
-//classList.contains() to check if clas exists
+//classList.contains() to check if class exists
 
 //classList.toggle() to toggle between and & remove
 //agar class exist krti hogi to use hata dega or nahi hogi to use add kr dega
