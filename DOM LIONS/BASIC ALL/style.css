@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.makeitred{
+    color: red;
+    font-family: Gilroy;
+    font-size: 100px;
+    /* text:"welcome to death circle"; */
+}
