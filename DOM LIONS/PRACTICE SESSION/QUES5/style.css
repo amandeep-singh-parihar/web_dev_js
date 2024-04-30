@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Gilroy'; */
+    font-family: 'Gilroy';
 }
 
 html,body{
@@ -10,16 +10,15 @@ html,body{
     width: 100%;
 }
 
-input{
-    font-size: 20px;
+h1{
+    font-size: 50px;
 }
 
 button{
-    font-size: 20px;
+    font-size: 50px;
 }
 
-.red{
+.st{
+    color: blue;
     font-family: monument;
-    color: red;
-    font-size: 50px;
 }
