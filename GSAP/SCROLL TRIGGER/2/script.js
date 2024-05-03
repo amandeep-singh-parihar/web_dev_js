@@ -1,5 +1,5 @@
 gsap.to("#page2 img",{
-    width:"80%",
+    width:"100%",
     scrollTrigger:{
         trigger:"#page2",
         scroller:"body",
