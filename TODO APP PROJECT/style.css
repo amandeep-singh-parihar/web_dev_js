@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#navbar {
+  background-color: #0a0908;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  height: 8vh;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#har {
+  color: #dc2f02;
+}
+/* button */
+/* button */
+/* button */
+.Btn {
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: relative;
+  background-color: rgb(31, 31, 31);
+  overflow: hidden;
+}
+
+.svgIcon {
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.text {
+  position: absolute;
+  color: white;
+  width: 120px;
+  font-weight: 600;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+.text #hub {
+  color: #dc2f02;
+  width: 120px;
+  font-weight: 600;
+}
+
+.Btn:hover {
+  width: 110px;
+  transition-duration: 0.4s;
+  border-radius: 30px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+
+.Btn:hover .svgIcon {
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+/* button */
+/* button */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0a0908;
+  padding: 10px;
+}
+
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  margin: 70px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 35px;
+  border: 2px solid #a99985;
+}
+
+.todo-app h2 {
+  color: #a99985;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-app h2 #done {
+  color: #dc2f02;
+}
+
+#circle {
+  color: #0a0908;
+  background-color: #dc2f02;
+  height: 100px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 23px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#todo-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 35px;
+  border: 2px solid #a99985;
+}
+
+#todo-head p{
+  color: white;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 25px;
+  gap: 30px;
+  height: 55px;
+}
+
+
+
+.row input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-weight: 14px;
+  background-color:rgb(30,30,30);
+  width: 100%;
+  border-radius: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #a99985;
+  border: 2px solid #a99985;
+  height: 100%;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.addbtn {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #dc2f02;
+  color: #0a0908;
+  cursor: pointer;
+  border-radius: 35px;
+  width: 10px;
+  padding: 10px 10px 10px 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #a99985;
+}
+
+/* deletebutton */
+.bin-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #dc2f02;
+  cursor: pointer;
+  border: 2px solid #a99985;
+  transition-duration: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.bin-bottom {
+  width: 15px;
+  z-index: 2;
+}
+.bin-top {
+  width: 17px;
+  transform-origin: right;
+  transition-duration: 0.3s;
+  z-index: 2;
+}
+.bin-button:hover .bin-top {
+  transform: rotate(45deg);
+}
+.bin-button:hover {
+  background-color: rgb(255, 0, 0);
+}
+.bin-button:active {
+  transform: scale(0.9);
+}
+.garbage {
+  position: absolute;
+  width: 14px;
+  height: auto;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.bin-button:hover .garbage {
+  animation: throw 0.4s linear;
+}
+@keyframes throw {
+  from {
+    transform: translate(-400%, -700%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+/* deletebutton */
+
+ul li {
+  position: relative;
+  list-style: none;
+  font-size: 17px;
+  padding: 20px 10px 20px 50px;
+  margin-top: 14px;
+  user-select: none;
+  cursor: pointer;
+  color: #a99985;
+  background-color: rgb(30,30,30);
+  border: 2px solid #a99985;
+  border-radius: 15px;
+  font-weight: 900;
+  
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 17px;
+  left: 12px;
+}
+
+ul li.checked {
+  color: #ccc5b9;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  width: 55px;
+  height: 40px;
+  font-size: 22px;
+}
