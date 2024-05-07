@@ -101,7 +101,6 @@ body {
   padding: 10px;
 }
 
-
 .todo-app {
   width: 100%;
   max-width: 540px;
@@ -116,10 +115,23 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  font-size: 33px;
 }
 
 .todo-app h2 #done {
   color: #dc2f02;
+}
+
+.todo-app h2::after{
+  content: "keep it up";
+  font-size: 12px;
+  margin-left: -130px;
+  margin-bottom: -40px;
+  font-family:Arial, Helvetica, sans-serif;
+  word-spacing: 4px;
+  letter-spacing: 3px;
+  font-weight: lighter;
+
 }
 
 #circle {
@@ -150,7 +162,7 @@ body {
   border: 2px solid #a99985;
 }
 
-#todo-head p{
+#todo-head p {
   color: white;
 }
 
@@ -167,15 +179,13 @@ body {
   height: 55px;
 }
 
-
-
 .row input {
   flex: 1;
   border: none;
   outline: none;
   padding: 10px;
   font-weight: 14px;
-  background-color:rgb(30,30,30);
+  background-color: rgb(30, 30, 30);
   width: 100%;
   border-radius: 25px;
   padding-left: 25px;
@@ -187,7 +197,7 @@ body {
   font-weight: 600;
 }
 
-.addbtn {
+#addbtn {
   border: none;
   outline: none;
   padding: 16px 50px;
@@ -275,11 +285,10 @@ ul li {
   user-select: none;
   cursor: pointer;
   color: #a99985;
-  background-color: rgb(30,30,30);
+  background-color: rgb(30, 30, 30);
   border: 2px solid #a99985;
   border-radius: 15px;
   font-weight: 900;
-  
 }
 
 ul li::before {
