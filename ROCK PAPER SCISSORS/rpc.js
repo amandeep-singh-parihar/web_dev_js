@@ -17,7 +17,7 @@ const drawGame = () => {
 };
 
 const userScorePara = document.querySelector("#user-score");
-const compScorePara = document.querySelector("#comp-score");
+const compScorePara = document.querySelector("#comp-score");  
 
 const showWinner = (userWin, userChoice, compChoice) => {
   if (userWin) {
